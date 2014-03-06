@@ -1,6 +1,6 @@
 define([
     "jquery",
-    "patterns",
+    "registry",
     'logging',
     "pat-parser",
     "pat-inject",

@@ -110,7 +110,7 @@ define([
         },
 
         _loadTemplateAndContext: function($el, opts, context, global_context) {
-            var cfg = parser.parse($el, opts),
+            var cfg = parser.parse($el, opts, null, false),
                 url, id, html, $template;
 
             log.debug('config', cfg);

@@ -8,7 +8,7 @@ define([
     "innerxhtml"
 ], function($, patterns, logger, Parser, inject, _handlebars) {
     var log = logger.getLogger('pat.template'),
-        parser = new Parser("template", { inherit: false });
+        parser = new Parser("template");
 
     parser.add_argument("template");
     parser.add_argument("name");

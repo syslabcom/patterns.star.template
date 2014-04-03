@@ -277,9 +277,9 @@ define([
         }
     };
 
-    Handlebars.registerHelper('setSelected', function(is, should) {
+    Handlebars.registerHelper('setSelected', function(is, should, default_val) {
         is = is || "";
-        should = should || "";
+        should = should || default_val || "";
         // later, false attributes will be removed and true ones set
         // to correct string
         if (Array.isArray(should)) {

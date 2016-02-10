@@ -335,5 +335,9 @@ define([
         })[0][return_key];
     });
 
+    Handlebars.registerHelper('escape', function(arg) {
+        return encodeURIComponent(arg);
+    });
+
     patterns.register(_);
 });
